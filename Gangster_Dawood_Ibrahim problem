@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int tc=sc.nextInt();
+        while(tc>0){
+            int noOfHouse=sc.nextInt();
+            int[] arr=new int[noOfHouse];
+            for(int i =0;i<noOfHouse;i++){
+                arr[i]=sc.nextInt();
+            }
+            Arrays.sort(arr);
+            if(noOfHouse%2!=0)System.out.println(arr[noOfHouse/2]);
+            else System.out.println(arr[(noOfHouse/2)-1]);
+            tc--;
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
